@@ -1,0 +1,25 @@
+<!--
+    Performed by Gaurav Amarnani.
+    Q. Armstrong Number.
+-->
+<html>
+    <head>
+        <title>Armstrong Number. </title>
+    </head>
+    <script type="text/javascript" lang="javascript">
+        const num = prompt("Enter Number.");
+        let temp = num;
+        var total = 0, rem;
+        while(temp > 0) {
+            rem = temp % 10;
+            total += (rem * rem * rem);
+            temp = parseInt(temp/10);
+        }
+        if(total==num) {
+            document.write("ARMSTRONG NUMBER.")
+        }
+        else {
+            document.write("NOT AN ARMSTRONG NUMBER.")
+        }
+    </script>
+</html>

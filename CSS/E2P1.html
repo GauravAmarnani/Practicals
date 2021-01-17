@@ -1,0 +1,55 @@
+<!--
+    Performed by Gaurav Amarnani.
+    Q. Arrays.
+-->
+<html>
+    <head>
+        <title>Arrays.</title>
+    </head>
+    <script lang="javascript" type="text/javascript">
+        
+        //Declaration :
+        
+        //Method 1 : 
+        var array1 = ["Gaurav","Chetan","Riya", "Gaurang", "Kaplesh"];
+        
+        //Method 2 :
+        var array2 = new Array(10,20,30);
+        
+        //Method 3 : 
+        var array3 = new Array();
+        array3.push(50);
+        array3.push(30);
+        array3.push(70);
+        array3.push(80);
+        array3.push(20);
+        array3.push(10);
+        array3.push(0);
+        array3.push(90);
+        
+        document.write("<h1>Sorted with Pushing : </h1>");
+        array3.sort();
+        for(var i = 0; i < array3.length; i++) {
+            document.write(array3[i] + "<br>");
+        }
+
+        document.write("<h1>Reversed with Poping last Element : </h1>");
+        array3.pop();
+        array3.reverse();
+        for(var i = 0; i < array3.length; i++) {
+            document.write(array3[i] + "<br>");
+        }
+
+        document.write("<h1>Joined to a String : </h1>");
+        var allNames = array1.join(",") + ".";
+        document.write(allNames + "<br>");
+
+        document.write("<h1>Concated to a Array : </h1>");
+        var allNumbers = array2.concat(40,50);
+        document.write(allNumbers + "<br>");
+
+    </script>
+    <body>
+
+    </body>
+</html>

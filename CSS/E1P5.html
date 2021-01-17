@@ -1,0 +1,24 @@
+<!--
+    Performed by Gaurav Amarnani.
+    Q. Factorial.
+-->
+<html>
+    <head>
+        <title>Factorial.</title>
+    </head>
+    <script lang="javascript" type="text/javascript">
+        var userNumber = prompt("Enter number to find its Factorial.");
+        var factorial = 1;
+        if(userNumber>0) {
+            document.write("<h1>Factorial of : " + userNumber + "</h1>");
+            for(var i = 1; i <= userNumber; i++) {
+                factorial = factorial * i;
+            }
+            document.write(factorial);
+        }
+        else {
+            document.write("Not a positive number.");
+        }
+    </script>
+    <body></body>
+</html>

@@ -1,0 +1,30 @@
+<!--
+    Performed by Gaurav Amarnani.
+    Q. Fibonacci Series.
+-->
+<html>
+    <head>
+        <title>Fibonacci Series.</title>
+    </head>
+    <script lang="javascript" type="text/javascript">
+        var userNumber = prompt("Enter number till which you wanna generate Fibonacci series.");
+        var first = 0;
+        var second = 1;
+        var total = 0;
+        var temp;
+        document.write("<h1>Fibonacci series for : " + userNumber + "</h1>");
+        document.write(first + "<br>");
+        document.write(second + "<br>");
+        while(total < userNumber) {
+            total = first + second;
+            if(total > userNumber) {
+                break;
+            }
+            temp = first;
+            first = second;
+            second += temp;
+            document.write(total + "<br>");
+        }
+    </script>
+    <body></body>
+</html>

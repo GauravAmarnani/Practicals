@@ -3,7 +3,7 @@
 
     Published @2 January 2:30 PM.
 
-    Q. Write a program to create a JTable.
+    Q. Write a program to create a JProgressBar.
 */
 
 //Importing Classes : 
