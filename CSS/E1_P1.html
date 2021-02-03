@@ -1,0 +1,40 @@
+<!--
+    Performed by Gaurav Amarnani, Roll no. 21.
+
+    Q.  Write simple JavaScript with HTML for arithmetic expression
+        evaluation and message printing.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Arithmetic Expression.</title>
+    </head>
+    <script type="text/javascript" lang="javascript">
+        function calculate() {
+            var number1 = new Number(document.getElementById("num1").value);
+            var number2 = new Number(document.getElementById("num2").value);
+            var addition = (number1 + number2);
+            var substraction = number1 - number2;
+            var division = number1 / number2;
+            var multiplication = number1 * number2;
+            document.write("<h3>Addition : " + addition +"</h3>");
+            document.write("<h3>Substraction : " + substraction + "</h3>");
+            document.write("<h3>Division : " + division +"</h3>");
+            document.write("<h3>Multiplication : " + multiplication + "</h3>");
+            document.write("<h1>Performed by Gaurav Amarnani, Roll no. 21.</h1>");
+            alert("All calculations done.");
+        }
+    </script> 
+    <body>
+        <header>
+            <h1>Enter two numbers :</h1>
+            <form onsubmit="calculate()">
+                Number 1 : <input type="number" id="num1"/> <br/> <br/>
+                Number 2 : <input type="number" id="num2"/> <br/> <br/>
+                <input type="submit" value="Submit."/> <br/>
+            </form>
+        </header>
+        <footer></footer>
+    </body>
+</html>

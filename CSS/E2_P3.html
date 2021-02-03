@@ -1,0 +1,41 @@
+<!--
+    Performed by Gaurav Amarnani, Roll no. 21.
+
+    Q.  Write simple JavaScript to show Decision Making Statements and 
+        Looping Statements. (WHILE).
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Looping Statements : While.</title>
+    </head>
+    <script type="text/javascript" lang="javascript">
+        function generateFibonacci() {
+            var end = new Number(document.getElementById("endNumber").value);
+            var first = 0, second = 1, temp = 0;
+            document.write("<h1>");
+            document.write("Fibonacci series for " + end + " is : <br/> " + first + " " + second);
+            while(second < end) {
+                temp = first;
+                first = second;
+                second = temp + first;
+                if(second < end) {
+                    document.write(" " + second);
+                }
+            }
+            document.write("</h1><h1>Performed by Gaurav Amarnani, Roll no 21.</h1>");
+        }
+    </script>
+    <body>
+        <header>
+            <h1>Looping Statements : While.</h1>
+            <form onsubmit="generateFibonacci()">
+                <h2>Enter the nmber till you want the series to continue :
+                <input type="number" id="endNumber"/> </h2> 
+                <input type="submit" value="Submit."/> 
+            </form>
+        </header>
+        <footer></footer>
+    </body>
+</html>

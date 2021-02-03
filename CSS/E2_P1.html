@@ -1,0 +1,39 @@
+<!--
+    Performed by Gaurav Amarnani, Roll no. 21.
+
+    Q.  Write simple JavaScript to show Decision Making Statements and 
+        Looping Statements. (IF-ELSE).
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Decision Making : IF-ELSE.</title>
+    </head>
+    <script type="text/javascript" lang="javascript">
+        function checkAge() {
+            var age = new Number(document.getElementById("userAge").value);
+            var name = new String(document.getElementById("userName").value);
+            if(age >= 18) {
+                alert(name + " you are eligible to vote.");
+            }
+            else if(age < 18) {
+                alert(name + " you are not eligible to vote.");
+            }
+            else {
+                alert(name + " you have not enetered a proper input.");
+            }
+        }
+    </script>
+    <body>
+        <header>
+            <h1>DECISION MAKING STATEMENT : IF-ELSE.</h1>
+            <form onsubmit="checkAge()">
+                Enter Name : <input type="text" id="userName"/> <br/> <br/>
+                Enter Age  : <input type="number" id="userAge"/> <br/> <br/>
+                <input type="submit" value="Submit."/> <br/>
+            </form>
+        </header>
+        <footer></footer>
+    </body>
+</html>

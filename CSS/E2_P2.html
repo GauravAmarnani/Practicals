@@ -1,0 +1,52 @@
+<!--
+    Performed by Gaurav Amarnani, Roll no. 21.
+
+    Q.  Write simple JavaScript to show Decision Making Statements and 
+        Looping Statements. (SWITCH).
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Decision Making : Switch.</title>
+    </head>
+    <script type="text/javascript" lang="javascript">
+        function checkState() {
+            var state = document.getElementById("userState").value;
+            var taxPercent = new Number();
+            switch(state) {
+                case "Maharashtra" : case "Goa" :  
+                    taxPercent = 18;
+                    break;
+                case "Delhi" : case "Madhya Pradesh" : 
+                    taxPercent = 16;
+                    break;
+                case "Rajasthan" : case "Karnataka" : case "Assam" :
+                    taxPercent = 19;
+                    break;
+                default : 
+                    taxPercent = 15;
+            }
+            document.write("<h2>Tax for state of " + state + " is " + taxPercent + "%</h2>");
+            document.write("<h1>Performed by Gaurav Amarnani, Roll no 21.</h1>");
+        }
+    </script>
+    <body>
+        <header>
+            <h1>Decision Making Statements : Switch.</h1>
+            <form onsubmit="checkState()">
+                State : 
+                <select id="userState">
+                    <option value="Maharashtra" selected>Maharashtra</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Karnataka">Karnataka</option>
+                </select> <br/> <br/>
+                <input type="submit" value="Submit."/>
+            </form>
+        </header>
+    </body>
+</html>

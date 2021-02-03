@@ -1,14 +1,13 @@
 <!--
     Performed by Gaurav Amarnani.
-    Q. Arrays.
+    Q. Develop JavaScript program to implement Array functionalities.
 -->
 <html>
     <head>
-        <title>Arrays.</title>
+        <title>Array Functionalities.</title>
     </head>
     <script lang="javascript" type="text/javascript">
-        
-        //Declaration :
+        //Declaration & Initialization :
         
         //Method 1 : 
         var array1 = ["Gaurav","Chetan","Riya", "Gaurang", "Kaplesh"];
@@ -27,6 +26,21 @@
         array3.push(0);
         array3.push(90);
         
+        document.write("<h1>Array 1 : </h1>");
+        for(var i = 0; i < array1.length; i++) {
+            document.write(array1[i] + "<br>");
+        }
+
+        document.write("<h1>Array 2 : </h1>");
+        for(var i = 0; i < array2.length; i++) {
+            document.write(array2[i] + "<br>");
+        }
+
+        document.write("<h1>Array 3 : </h1>");
+        for(var i = 0; i < array3.length; i++) {
+            document.write(array3[i] + "<br>");
+        }
+
         document.write("<h1>Sorted with Pushing : </h1>");
         array3.sort();
         for(var i = 0; i < array3.length; i++) {
@@ -47,9 +61,7 @@
         document.write("<h1>Concated to a Array : </h1>");
         var allNumbers = array2.concat(40,50);
         document.write(allNumbers + "<br>");
-
+        document.write("<h1>Performed by Gaurav Amarnani, Roll no 21.</h1>");
     </script>
-    <body>
-
-    </body>
+    <body></body>
 </html>
